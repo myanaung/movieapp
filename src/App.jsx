@@ -112,6 +112,19 @@ const App = () => {
             />
           }
         />
+        <Route
+          path="/channelmyanaung"
+          element={
+            <Movies
+              handleSearch={handleSearch}
+              handlePageChange={handlePageChange}
+              paginatedMovies={paginatedMovies}
+              searchedMovies={searchedMovies}
+              pageSize={pageSize}
+              currentPage={currentPage}
+            />
+          }
+        />
         <Route path="/:id" element={<MovieDetails data={movies} />} />
         <Route
           path="/crime"
