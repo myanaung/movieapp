@@ -100,20 +100,7 @@ const App = () => {
       />
       <Routes>
         <Route
-          path="//*"
-          element={
-            <Movies
-              handleSearch={handleSearch}
-              handlePageChange={handlePageChange}
-              paginatedMovies={paginatedMovies}
-              searchedMovies={searchedMovies}
-              pageSize={pageSize}
-              currentPage={currentPage}
-            />
-          }
-        />
-        <Route
-          path="/channelmyanaung"
+          path="/movieapp/*"
           element={
             <Movies
               handleSearch={handleSearch}
